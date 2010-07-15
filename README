@@ -1,3 +1,9 @@
 Run 
 $ sudo backup_partitions.sh /dev/sda 
 to save partition metadata.
+
+Save these files. Boot the rescue CD in times of need.
+Retrieve the files as sfdisk_out and mbr.
+
+Run
+$ sudo restore_partitions sfdisk_out mbr

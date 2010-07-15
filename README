@@ -1,0 +1,3 @@
+Run 
+$ sudo backup_partitions.sh /dev/sda 
+to save partition metadata.

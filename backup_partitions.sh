@@ -13,4 +13,5 @@ fi
 BACKUP_DIR='/backups'
 
 fdisk -l $DEVICE > $BACKUP_DIR/fdisk.txt
+sfdisk -dl $DEVICE > $BACKUP_DIR/sfdisk.out
 dd if=$DEVICE of=$BACKUP_DIR/mbr bs=512 count=1
